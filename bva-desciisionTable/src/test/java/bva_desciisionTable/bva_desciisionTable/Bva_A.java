@@ -53,7 +53,6 @@ public class Bva_A {
 
         // act
         int result = MinCalculator.findMin(a, b, c, d, e);
-
         // assert
         assertEquals(1, result);   // 1 הוא הערך המינימלי
     }
@@ -61,7 +60,7 @@ public class Bva_A {
  
 @Test
 //(Min+1)
-void testAIsOne_shouldReturnMinimumAdd1() {
+	void testAIsOne_shouldReturnMinimumAdd1() {
     // arrange
     int a = 2;    // ערך גבול תקין
     int b = 50;
@@ -80,7 +79,7 @@ void testAIsOne_shouldReturnMinimumAdd1() {
 
 @Test
 ////(Max)
-void testAIsOne_shouldReturnMAX() {
+	void testAIsOne_shouldReturnMAX() {
     // arrange
     int a = 1000;    // ערך גבול תקין
     int b = 50;
@@ -90,52 +89,49 @@ void testAIsOne_shouldReturnMAX() {
 
     // act
     int result = MinCalculator.findMin(a, b, c, d, e);
-
     // assert
-    assertEquals(50, result); 
+    assertEquals(50, result);
+    
 }
 
 
 
 
 @Test
-////(Max-1)
-void testAIsOne_shouldReturnMaxminus1() {
-  // arrange
-  int a = 999;    // ערך גבול תקין
-  int b = 50;
-  int c = 50;
-  int d = 50;
-  int e = 50;
-
-  // act
-  int result = MinCalculator.findMin(a, b, c, d, e);
-
-  // assert
-  assertEquals(50, result); 
-}
+	////(Max-1)
+	void testAIsOne_shouldReturnMaxminus1() {
+	  // arrange
+	  int a = 999;    // ערך גבול תקין
+	  int b = 50;
+	  int c = 50;
+	  int d = 50;
+	  int e = 50;
+	
+	  // act
+	  int result = MinCalculator.findMin(a, b, c, d, e);
+	
+	  // assert
+	  assertEquals(50, result); 
+	}
 
 
 
 
 @Test
-////(nominal)
-void testAIsOne_shouldReturnnominal() {
-    // arrange
-    int a = 500;    // ערך גבול תקין
-    int b = 50;
-    int c = 50;
-    int d = 50;
-    int e = 50;
-
-    // act
-    int result = MinCalculator.findMin(a, b, c, d, e);
-
-    // assert
-    assertEquals(50, result); 
-}
-
-
-  
+	////(nominal)
+	void testAIsOne_shouldReturnnominal() {
+	    // arrange
+	    int a = 500;    // ערך גבול תקין
+	    int b = 50;
+	    int c = 50;
+	    int d = 50;
+	    int e = 50;
+	
+	    // act
+	    int result = MinCalculator.findMin(a, b, c, d, e);
+	
+	    // assert
+	    assertEquals(50, result); 
+	} 
 
 }

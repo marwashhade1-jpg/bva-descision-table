@@ -2,7 +2,7 @@ package bva_desciisionTable.bva_desciisionTable;
 
 public class CoinDecision {
 	
-	 public static String CoinDecision(String t1, String t2, String t3, String t4) {
+	 public String CoinDecision(String t1, String t2, String t3, String t4) {
 	        int countH = 0;
 
 	        // ספירת כמה פעמים התקבל "H"

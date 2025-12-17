@@ -5,7 +5,7 @@ public class Bva_B {
 
 	 @Test
 //	(Min-1)
-	    void testAIsZero_shouldThrowExceptionb() {
+	    void testAIsZero_shouldThrowException() {
 	        // arrange
 	        int a = 50;   // ערך לא חוקי
 	        int b = 0;
@@ -21,7 +21,7 @@ public class Bva_B {
 	
 	   @Test
 //(Max+1)
-	    void testAIs1001_shouldThrowExceptionb() {
+	    void testAIs1001_shouldThrowException() {
 	        // arrange
 	        int a = 50;   // ערך לא חוקי
 	        int b = 1001;
@@ -37,8 +37,7 @@ public class Bva_B {
 
 	 @Test
 //(Min)
-	 //////////??????????????? 1 is not on 1-1000
-	    void testAIsOne_shouldReturnMinimumb() {
+	    void testAIsOne_shouldReturnMinimum() {
 	        // arrange
 	        int a = 50;    // ערך גבול תקין
 	        int b = 1;
@@ -52,11 +51,11 @@ public class Bva_B {
 	        // assert
 	        assertEquals(1, result);   // 1 הוא הערך המינימלי
 	    }
-//	 
+	 
 	 
 	@Test
 //(Min+1)
-  void testAIsOne_shouldReturnMinimumAdd1b() {
+  void testAIsOne_shouldReturnMinimumAdd1() {
       // arrange
       int a = 50;    // ערך גבול תקין
       int b = 2;
@@ -75,7 +74,7 @@ public class Bva_B {
 
 	@Test
 ////(Max)
-  void testAIsOne_shouldReturnMAXb() {
+  void testAIsOne_shouldReturnMAX() {
       // arrange
       int a = 50;    // ערך גבול תקין
       int b = 1000;
@@ -95,7 +94,7 @@ public class Bva_B {
 	
 	@Test
 ////(Max-1)
-void testAIsOne_shouldReturnMaxminus1b() {
+void testAIsOne_shouldReturnMaxminus1() {
     // arrange
     int a = 50;    // ערך גבול תקין
     int b = 999;
@@ -115,7 +114,7 @@ void testAIsOne_shouldReturnMaxminus1b() {
 	
 	@Test
 ////(nominal)
-  void testAIsOne_shouldReturnnominalb() {
+  void testAIsOne_shouldReturnnominal() {
       // arrange
       int a = 50;    // ערך גבול תקין
       int b = 500;
@@ -130,5 +129,4 @@ void testAIsOne_shouldReturnMaxminus1b() {
       assertEquals(50, result); 
   }
 
-	
 }
